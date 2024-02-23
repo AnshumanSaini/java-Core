@@ -1,0 +1,14 @@
+package com.hughes.test;
+
+public class NewOne {
+
+	public void display(int ...a)
+	{
+		System.out.println(a);
+	}
+	public static void main(String[] args) {
+		new NewOne().display(10);
+
+	}
+
+}

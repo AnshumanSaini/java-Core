@@ -1,0 +1,16 @@
+package com.hughes.test;
+
+public class Ten {
+
+	public static void main(String[] args) 
+	{
+		char ch='z';
+		int i=0;
+		do
+		{
+			System.out.print((char)(z-i));
+		}while(i>0);
+
+	}
+
+}

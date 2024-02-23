@@ -1,0 +1,13 @@
+package com.hughes.test;
+
+public class Seven {
+
+	public static void main(String[] args) 
+	{
+		String s="vasu34k@gmail.com";
+		int n=s.length();
+		String chk=s.substring(n-10);
+		System.out.println(chk);
+	}
+
+}

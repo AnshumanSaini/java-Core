@@ -1,0 +1,31 @@
+package com.hughes.test;
+
+import java.util.Arrays;
+
+//write a java program for beow requirement.
+//i/p: 34567
+//o/p: Thirty four Thousand Five Hunderad and Sixty Seven Only
+
+public class Five {
+
+	public static void main(String[] args) 
+	{
+		String s="34567";
+		int[] tmp=new int[6];
+		Arrays.fill(tmp,-1);
+		int n=s.length();
+		for(int i=0;i<n;++i)
+		{
+			tmp[i]=Character.getNumericValue(s.charAt(n-i-1));
+		}
+		System.out.println(Arrays.toString(tmp));
+//		String[] int_to_char=new String[9]{"one","two","three","four","five","six","seven","eight","nine"};
+//		String[] pos=new String[]{""};
+		
+		for(int i=0;i<n;++i)
+		{
+			
+		}
+	}
+
+}

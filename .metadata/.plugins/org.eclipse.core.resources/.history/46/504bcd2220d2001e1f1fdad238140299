@@ -1,0 +1,11 @@
+package com.hughes.test;
+import java.util.Vector;
+
+public class CollectionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vector obj=new Vector();
+	}
+
+}

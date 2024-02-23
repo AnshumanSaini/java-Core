@@ -1,0 +1,10 @@
+package com.hughes.customExceptions;
+
+public class CharacterException {
+	
+	public CharacterException(String str)
+	{
+		super(str);
+	}
+
+}
