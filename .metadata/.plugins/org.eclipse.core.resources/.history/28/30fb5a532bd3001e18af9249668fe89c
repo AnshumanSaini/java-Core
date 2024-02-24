@@ -1,6 +1,6 @@
-package com.hughes.test;
+package com.hughes.assignment;
 
-public class Five {
+public class CoreJava_Assessment1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

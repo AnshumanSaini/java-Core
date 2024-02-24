@@ -1,0 +1,37 @@
+package com.hughes.assignment;
+
+class Account{
+	private String accountID;
+	private String accountName;
+	private String Address;
+	private int depositAmount;
+	
+	public void showDetails(){
+		System.out.println(accountID+"\n"+accountName+"\n"+Address+"\n"+depositAmount);
+	}
+	
+	public int getDetails() {
+		return depositAmount;
+	}
+}
+
+class Loan extends Account{
+	private String loanID;
+	private String loanType;
+	private int loanAmount;
+	
+	public void getLoan(int amt, String type, String id) {
+		loanAmount+=amt;
+		loanType=type;
+		loanID=id;
+	}
+}
+
+public class CoreJava_Assessment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

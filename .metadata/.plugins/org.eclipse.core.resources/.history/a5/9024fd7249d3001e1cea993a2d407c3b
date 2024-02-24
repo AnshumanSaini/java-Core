@@ -1,0 +1,96 @@
+package com.hughes.assignment;
+
+class Account{
+	private String accountID;
+	private String accountName;
+	private String Address;
+	public int depositAmount;
+	
+	public void showDetails(){
+		System.out.println(accountID+"\n"+accountName+"\n"+Address+"\n"+depositAmount);
+	}
+	
+	public void getDetails(int amt, String add, String name, String id){
+		String prefix=id.substring(0, 7);
+		String suffix=id.substring(8);
+		for(char c : prefix.toCharArray())
+		{
+			if(c<'0' || c>'9') {
+				System.out.println("INVALID ID");
+			}
+		}
+		
+		for(char c : suffix.toCharArray())
+		{
+			if(c<'A' || c>'Z') {
+				System.out.println("INVALID ID");
+			}
+		}
+		
+		accountID=id;
+		accountName=name;
+		Address=add;
+		depositAmount=amt;
+	}
+}
+
+class Loan extends Account{
+	private String loanID;
+	private String loanType;
+	public int loanAmount;
+	
+	public void getLoan(int amt, String type, String id) {
+		loanAmount+=amt;
+		loanType=type;
+		loanID=id;
+	}
+	
+	public void showLoanDetails()
+	{
+		System.out.println(loanID+"\n"+loanType+"\n"+loanAmount);
+	}
+}
+
+class Transaction extends Loan{
+	
+	public void depositAmount(int amt){
+		super.depositAmount+=amt;
+	}
+	
+	public int withdrawAmount(int amt){
+		if(super.depositAmount<amt){
+			System.out.println("Insufficient Balance!!!");
+			return -1;
+		}
+		else {
+			super.depositAmount-=amt;
+			return amt;
+		}
+	}
+	
+	public void payLoan(int amt) {
+		if(super.loanAmount<amt) {
+			amt-=super.loanAmount;
+			super.loanAmount=0;
+			super.depositAmount+=amt;
+			System.out.println("Not enough loan rest of the money is deposited into acccount");
+		}
+		else super.loanAmount-=amt;
+	}
+	
+	public void showAccountDetails() {
+		super.showDetails();
+		super.showLoanDetails();
+	}
+}
+
+public class CoreJava_Assessment1 {
+
+	public static void main(String[] args) {
+		Account[] arr=new Account[10];
+		arr[0]=new Account();
+		arr[0].getDetails(2000,"delhi","abc","1234567-ASDF");
+
+	}
+
+}
