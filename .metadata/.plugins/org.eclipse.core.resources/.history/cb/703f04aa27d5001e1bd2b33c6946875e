@@ -1,0 +1,15 @@
+package com.jdbc.JdbcApp;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args ) throws ClassNotFoundException
+    {
+        System.out.println( "Hello World!" );
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con=DriverManager.getConnection("jdbc:.mysql://localhost:3306/Hughes","root","root");
+    }
+}

@@ -1,0 +1,15 @@
+package com.hughes.Java8;
+
+@FunctionalInterface
+interface SamExample1{
+	void display();
+}
+
+public class SamExample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

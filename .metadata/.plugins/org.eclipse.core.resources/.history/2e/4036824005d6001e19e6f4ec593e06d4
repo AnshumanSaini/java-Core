@@ -1,0 +1,19 @@
+package com.hughes.Java8;
+
+@FunctionalInterface
+interface SamExample1{
+	void display();
+}
+
+public class SamExample implements SamExample1{
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public void display(){
+		System.out.println("hey");
+	}
+
+}

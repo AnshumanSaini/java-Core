@@ -1,0 +1,11 @@
+package com.hughes.Java8;
+import java.util.*;
+
+public class Lambda1 {
+
+	public static void main(String[] args) {
+	List<Integer> list=new ArrayList<>();
+
+	}
+
+}

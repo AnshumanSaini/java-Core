@@ -1,0 +1,17 @@
+package com.hughes.Threading;
+
+class UserThread extends Thread
+{
+	public void run(){
+		System.out.println("Thread Started");
+	}
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

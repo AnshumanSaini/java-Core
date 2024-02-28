@@ -1,0 +1,19 @@
+package com.hughes.Threading;
+
+class UserThread extends Thread
+{
+	public void run(){
+		System.out.println("Thread Started"+this.getName());
+	}
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		UserThread obj=new UserThread();
+		obj.start(); // start method will internally call on backend...
+		
+
+	}
+
+}
