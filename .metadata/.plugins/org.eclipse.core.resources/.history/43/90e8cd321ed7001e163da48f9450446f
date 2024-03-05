@@ -1,0 +1,18 @@
+package com.hughes.spring;
+import java.util.*;
+
+public class MapSpring {
+	private String name;
+	private Map map;
+	
+	MapSpring(String name, Map map){
+		this.map=map;
+		this.name=name;
+	}
+	
+	public void display(){
+		System.out.println(this.map);
+	}
+	
+
+}

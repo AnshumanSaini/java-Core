@@ -1,0 +1,23 @@
+package com.mvc;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class LoginController {
+	@RequestMapping("/login")
+	public ModelAndView login(HttpServletRequest request,HttpServletResponse response)
+	{
+		String username=request.getParameter("userName");
+		String password=request.getParameter("Password");
+		System.out.println(username+" "+password);
+		
+		if(username==null || password==null || username.length()==0 || password.length()==0) 
+			return new ModelAndView("errorPage","message", "Invalid username and password");
+		else return new ModelAndView("successPage","message", "WelcomeUser");
+	}
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="ls" class="com.hughes.spring.SpringListConst">
+		<constructor-arg value="Anshuman"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Anshuman</value>
+				<value>Saini</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="map" class="com.hughes.spring.MapSpring">
+		<constructor-arg value="Anshuman"></constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="1" value="Anshuman"></entry>
+				<entry key="2" value="Saini"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="mapSetter" class="com.hughes.spring.MapSpring">
+		<property name="name" value="Anshuman"></property>
+		<property name="map">
+			<map>
+			<entry key="10" value="Hey"></entry>
+			<entry key="20" value="There"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="set" class="com.hughes.spring.SetSpring">
+		<constructor-arg value="Anshuman"></constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>1</value>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+			</set>
+		</constructor-arg>
+	</bean>
+
+	<bean id="setSetter" class="com.hughes.spring.SetSpring">
+		<property name="name" value="Anshuman"></property>
+		<property name="set">
+			<set>
+				<value>2</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+			</set>
+		</property>
+	</bean>
+</beans>

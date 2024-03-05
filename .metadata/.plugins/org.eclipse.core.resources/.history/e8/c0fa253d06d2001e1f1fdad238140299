@@ -1,9 +1,0 @@
-package com.hughes.customExceptions;
-
-public class VoteException extends Exception {
-	
-	VoteException(String msg)
-	{
-		super(msg);
-	}
-}

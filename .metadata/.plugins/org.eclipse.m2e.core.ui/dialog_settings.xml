@@ -44,6 +44,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\HSC training\java Core\SpringApp\src\main\java\com\edu\spring\TestCustomer.java"/>
+			<item value="E:\HSC training\java Core\SpringBasics"/>
 			<item value="E:\HSC training\java Core\coreJava\src\com\hughes\assignment\Collection1.java"/>
 			<item value="E:\HSC training\java Core"/>
 			<item value="E:\HSC training\java Core\coreJava\src\com\hughes\assignment\Collection3.java"/>
@@ -60,10 +62,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.hughes.webapp.LoginForm"/>
+			<item value="com.edu.webapp.MVC_App1"/>
 		</list>
 		<list key="groupId">
+			<item value="com.hughes.webapp"/>
+			<item value="com.edu.webapp"/>
 		</list>
 		<list key="artifactId">
+			<item value="LoginForm"/>
+			<item value="MVC_App1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
